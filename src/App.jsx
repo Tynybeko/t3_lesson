@@ -9,6 +9,8 @@ import API from './lib/axios'
 import Auth from './pages/Auth'
 import PrivateLayout from './layout/PrivateLayout'
 import MainLayout from './layout/MainLayout'
+import Product from './pages/Product'
+import SingleProduct from './pages/SingleProduct'
 
 
 export const AppContext = createContext('Context')
@@ -49,6 +51,8 @@ export default function App() {
             <Route path='/' element={<PrivateLayout/>}>
                <Route index element={<Home />} />
                <Route path='/about' element={<About />} />
+               <Route path='/product' element={<Product />} />
+               <Route path='/product/:params' element={<SingleProduct />} />
             </Route>
             <Route path='/contacts' element={<Contacts />} />
             <Route path='/auth' element={<Auth />} />

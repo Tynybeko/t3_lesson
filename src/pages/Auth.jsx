@@ -12,7 +12,7 @@ export default function Auth() {
     <button onClick={() => {
         
             localStorage.setItem('___token___', 'TOKEN')
-        navigate('/')
+        navigate(-1)
     }
         
         }>AUTH</button>

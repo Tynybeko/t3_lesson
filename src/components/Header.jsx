@@ -17,6 +17,11 @@ const navLinks = [
     href: '/contacts',
     title: 'Contacts'
   },
+  {
+    id: 4,
+    href: '/product',
+    title: 'Product'
+  }
 ]
 
 export default function Header() {
